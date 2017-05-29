@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Response;
 class DriverController extends Controller
 {
     public function login(Request $request ){
+	return Response::json($request);
+/*
         $driver = DB::table('drivers')->where('permission_number',$request->input('permission_number'))->get();
         if(!empty($driver)){
             //si retorna un valor
@@ -37,5 +39,6 @@ class DriverController extends Controller
             ];
         }
         return Response::json($respuesta);
+*/
     }
 }
