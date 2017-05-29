@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
             'name' => 'Jonathan Camarena Ortega',
             'email' => 'jocamarenaor@ittepic.edu.mx',
             'cellphone' => '3111956909',
-            'password' => Hash::make('123456'),
+            'password' => "123456",
             'facebook' => 'https://www.facebook.com/Jhonee.Jhonee'
         ]);
     }

@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::resource('/api/test/travel','TravelController');
+Route::post('/api/test/user/login','UserController@login');
+Route::post('/api/test/driver/login','DriverController@login');

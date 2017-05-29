@@ -17,9 +17,10 @@ class CreateDriversTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('lastname');
-            $table->string('permission_number');
+            $table->string('permission_number')->unique();
             $table->string('address');
             $table->string('syndicate');
+            $table->string('password');
         });
     }
 
