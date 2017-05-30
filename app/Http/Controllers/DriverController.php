@@ -18,7 +18,7 @@ class DriverController extends Controller
             if($driver[0]->password == $request->input('password')){
                 $respuesta = [
                     'code' => 200,
-                    'msg' => Hash::make($driver[0]->id),
+                    'msg' => $driver[0]->id,
                     'detail' => "Inicio de sesión correcto"
                 ];
             }else{

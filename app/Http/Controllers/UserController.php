@@ -20,7 +20,7 @@ class UserController extends Controller
             if($user[0]->password == $request->input('password')){
                 $respuesta = [
                     'code' => 200,
-                    'msg' => Hash::make($user[0]->id),
+                    'msg' => $user[0]->id,
                     'detail' => "Inicio de sesión correcto"
                 ];
             }else{
