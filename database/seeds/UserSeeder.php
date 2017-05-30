@@ -29,7 +29,7 @@ class UserSeeder extends Seeder
 
         User::create([
             'name' => 'Jonathan Camarena Ortega',
-            'email' => 'jocamarenaor@ittepic.edu.mx',
+            'email' => 'alhermosillbe@ittepic.edu.mx',
             'cellphone' => '3111956909',
             'password' => "123456",
             'facebook' => 'https://www.facebook.com/Jhonee.Jhonee2'
