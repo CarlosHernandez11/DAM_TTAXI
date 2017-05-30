@@ -19,6 +19,8 @@ class CreateTravelsTable extends Migration
             $table->string('latitud');
             $table->string('longitud');
             $table->integer('driver_id')->unsigned()->default(1);
+            $table->string('travel_status_user')->default('E'); //E = Espera, A = Asignado, T = Terminado, C = Cancelado
+            $table->string('travel_status_driver')->default('E'); //E = Sin Asignar , A = Asignado, T = Terminado, C = Cancelado
 
         });
 

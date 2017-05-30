@@ -19,7 +19,11 @@ class TravelController extends Controller
     public function index()
     {
         try{
-            $travels = DB::table('travels')->where('driver_id','=',1)->get();
+            $travels = DB::table('travels')->where([
+                                                    ['driver_id','=',1],
+                                                    ['travel_status_user','<>','T'],
+                                                    ['travel_status_driver','<>','T']
+            ])->get();
             $respuesta= [
                 'code'   => 200,
                 'msg'    => $travels,
@@ -63,6 +67,7 @@ class TravelController extends Controller
                           ['user_id',$request->input('user_id')],
                           ['driver_id',1]]
                      )->get();
+           //por defecto ambos campos de status se llenan en E
            if($viajes[0]->registros<1) {
                $viaje = DB::table('travels')->insertGetId([
                    'user_id' => $request->input('user_id'),
@@ -138,12 +143,16 @@ class TravelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //cuando asignamos el viaje
     public function update(Request $request, $id)
     {
         try{
             $viaje  = Travell::findOrFail($id);
 
-            DB::table('travels')->where('id',$id) ->update(['driver_id'=>(int) $request->input('driver_id')]);
+            DB::table('travels')->where('id',$id) ->update(['driver_id'=>(int) $request->input('driver_id'),
+                                                            'travel_status_user' => 'A',
+                                                            'travel_status_driver' => 'A'
+                                                           ]);
             $respuesta = [
                 'code' => 200,
                 'msg'  => "Haz sido asignado al viaje con el id: ". $viaje->id,
@@ -161,12 +170,59 @@ class TravelController extends Controller
 
     }
 
+    //terminamos del lado del taxi
+    public function terminate(Request $request, $id){
+        try{
+            $viaje  = Travell::findOrFail($id);
+
+            DB::table('travels')->where('id',$id) ->update(['travel_status_driver' => 'T'
+            ]);
+            $respuesta = [
+                'code' => 200,
+                'msg'  => "Haz completado el viaje con el id: ". $viaje->id,
+                'detail' => "Recuerda revisar tu retroalimentacion"
+            ];
+        }catch(\Exception $e){
+            $respuesta = [
+                'code' => 500,
+                'msg'  => "Hemos tenido un error inesperado: ". $e->getMessage(),
+                'detail' => "Codigo de error: ". $e->getCode()
+            ];
+        }
+
+        return Response::json($respuesta);
+    }
+
+    //terminamos del lado del user
+    public function travelFinish(Request $request, $id){
+        try{
+            $viaje  = Travell::findOrFail($id);
+
+            DB::table('travels')->where('id',$id) ->update(['travel_status_user' => 'T'
+            ]);
+            $respuesta = [
+                'code' => 200,
+                'msg'  => "Nos Alegra que haya llegado a su destino",
+                'detail' => "Estamos para usted cuando lo requiera"
+            ];
+        }catch(\Exception $e){
+            $respuesta = [
+                'code' => 500,
+                'msg'  => "Hemos tenido un error inesperado: ". $e->getMessage(),
+                'detail' => "Codigo de error: ". $e->getCode()
+            ];
+        }
+
+        return Response::json($respuesta);
+    }
+
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //Este es el delete (cancelacion)
     public function destroy($id)
     {
         try {
