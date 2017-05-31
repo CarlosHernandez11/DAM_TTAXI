@@ -153,9 +153,14 @@ class TravelController extends Controller
                                                             'travel_status_user' => 'A',
                                                             'travel_status_driver' => 'A'
                                                            ]);
+            $datosviaje = [
+                "id" => $viaje->id,
+                "latitud" => $viaje->latitud,
+                "longitud" => $viaje->longitud
+            ];
             $respuesta = [
                 'code' => 200,
-                'msg'  => "Haz sido asignado al viaje con el id: ". $viaje->id,
+                'msg'  => json_encode($datosviaje),
                 'detail' => "Recuerda otorgar un excelente servicio"
             ];
         }catch(\Exception $e){
