@@ -247,4 +247,27 @@ class TravelController extends Controller
         }
         return Response::json($respuesta);
     }
+
+    public function id (Request $request)
+    {
+
+        $id = $request->get('id');
+        try{
+            $viaje = Travell::where('user_id',$id)->first();
+            $respuesta = [
+                'code' => 200,
+                'msg'  => $viaje,
+                'detail' => "Hemos encontrado este viaje"
+            ];
+        }catch(\Exception $e){
+            $respuesta = [
+                'code' => 404,
+                'msg'  => "No existe ningun viaje con el usuario especificado",
+                'detail' => "Codigo de error: ". $e->getCode()
+            ];
+        }
+
+        return Response::json($respuesta);
+
+    }
 }

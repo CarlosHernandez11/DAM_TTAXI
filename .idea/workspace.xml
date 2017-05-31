@@ -4,6 +4,7 @@
     <list default="true" id="f1093302-aa1d-4146-95ed-40ccf0ddb710" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/TravelController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/TravelController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,25 +19,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TravelController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TravelController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TravelController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="162" column="51" lean-forward="false" selection-start-line="162" selection-start-column="51" selection-end-line="162" selection-end-column="51" />
+            <state relative-caret-position="523">
+              <caret line="271" column="5" lean-forward="false" selection-start-line="271" selection-start-column="5" selection-end-line="271" selection-end-column="5" />
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
+                <element signature="e#341#1138#0#PHP" expanded="false" />
+                <element signature="e#1475#2984#0#PHP" expanded="false" />
                 <element signature="e#3117#3675#0#PHP" expanded="false" />
+                <element signature="e#4099#5239#0#PHP" expanded="false" />
+                <element signature="e#5280#6024#0#PHP" expanded="false" />
+                <element signature="e#6065#6803#0#PHP" expanded="false" />
                 <element signature="e#6986#7644#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="111" lean-forward="false" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
+            <state relative-caret-position="221">
+              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -94,8 +100,8 @@
         <option value="$PROJECT_DIR$/database/seeds/DriverSeeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DriverController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_05_28_185555_create_travels_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TravelController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -218,7 +224,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chocoburbujas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -298,18 +304,20 @@
       <workItem from="1496120859393" duration="2693000" />
       <workItem from="1496183317053" duration="35000" />
       <workItem from="1496263241374" duration="798000" />
+      <workItem from="1496269944203" duration="37000" />
+      <workItem from="1496270269461" duration="472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31952000" />
+    <option name="totallyTimeSpent" value="32461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5057283" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685325" sideWeight="0.4942717" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.4942717" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -342,13 +350,74 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TravelController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#341#1138#0#PHP" expanded="false" />
+            <element signature="e#1475#2984#0#PHP" expanded="false" />
             <element signature="e#3117#3675#0#PHP" expanded="false" />
+            <element signature="e#4099#5239#0#PHP" expanded="false" />
+            <element signature="e#5280#6024#0#PHP" expanded="false" />
+            <element signature="e#6065#6803#0#PHP" expanded="false" />
+            <element signature="e#6986#7644#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="111" lean-forward="false" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UserSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="e#7#20#0#PHP" expanded="true" />
+            <marker date="1496134864194" expanded="true" signature="187:481" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TravelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#341#1138#0#PHP" expanded="false" />
+            <element signature="e#1475#2984#0#PHP" expanded="false" />
+            <element signature="e#3117#3675#0#PHP" expanded="false" />
+            <element signature="e#4099#5239#0#PHP" expanded="false" />
+            <element signature="e#5280#6024#0#PHP" expanded="false" />
+            <element signature="e#6065#6803#0#PHP" expanded="false" />
             <element signature="e#6986#7644#0#PHP" expanded="false" />
           </folding>
         </state>
@@ -389,7 +458,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#341#1138#0#PHP" expanded="false" />
+            <element signature="e#1475#2984#0#PHP" expanded="false" />
             <element signature="e#3117#3675#0#PHP" expanded="false" />
+            <element signature="e#4099#5239#0#PHP" expanded="false" />
+            <element signature="e#5280#6024#0#PHP" expanded="false" />
+            <element signature="e#6065#6803#0#PHP" expanded="false" />
             <element signature="e#6986#7644#0#PHP" expanded="false" />
           </folding>
         </state>
@@ -430,7 +504,12 @@
           <caret line="114" column="72" lean-forward="false" selection-start-line="114" selection-start-column="72" selection-end-line="114" selection-end-column="72" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#341#1138#0#PHP" expanded="false" />
+            <element signature="e#1475#2984#0#PHP" expanded="false" />
             <element signature="e#3117#3675#0#PHP" expanded="false" />
+            <element signature="e#4099#5239#0#PHP" expanded="false" />
+            <element signature="e#5280#6024#0#PHP" expanded="false" />
+            <element signature="e#6065#6803#0#PHP" expanded="false" />
             <element signature="e#6986#7644#0#PHP" expanded="false" />
           </folding>
         </state>
@@ -485,7 +564,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#341#1138#0#PHP" expanded="false" />
+            <element signature="e#1475#2984#0#PHP" expanded="false" />
             <element signature="e#3117#3675#0#PHP" expanded="false" />
+            <element signature="e#4099#5239#0#PHP" expanded="false" />
+            <element signature="e#5280#6024#0#PHP" expanded="false" />
+            <element signature="e#6065#6803#0#PHP" expanded="false" />
             <element signature="e#6986#7644#0#PHP" expanded="false" />
           </folding>
         </state>
@@ -523,7 +607,12 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#341#1138#0#PHP" expanded="false" />
+            <element signature="e#1475#2984#0#PHP" expanded="false" />
             <element signature="e#3117#3675#0#PHP" expanded="false" />
+            <element signature="e#4099#5239#0#PHP" expanded="false" />
+            <element signature="e#5280#6024#0#PHP" expanded="false" />
+            <element signature="e#6065#6803#0#PHP" expanded="false" />
             <element signature="e#6986#7644#0#PHP" expanded="false" />
           </folding>
         </state>
@@ -711,23 +800,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TravelController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="111" lean-forward="false" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
-          <folding />
+        <state relative-caret-position="523">
+          <caret line="271" column="5" lean-forward="false" selection-start-line="271" selection-start-column="5" selection-end-line="271" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#341#1138#0#PHP" expanded="false" />
+            <element signature="e#1475#2984#0#PHP" expanded="false" />
+            <element signature="e#3117#3675#0#PHP" expanded="false" />
+            <element signature="e#4099#5239#0#PHP" expanded="false" />
+            <element signature="e#5280#6024#0#PHP" expanded="false" />
+            <element signature="e#6065#6803#0#PHP" expanded="false" />
+            <element signature="e#6986#7644#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TravelController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="162" column="51" lean-forward="false" selection-start-line="162" selection-start-column="51" selection-end-line="162" selection-end-column="51" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-            <element signature="e#3117#3675#0#PHP" expanded="false" />
-            <element signature="e#6986#7644#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
