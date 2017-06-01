@@ -160,7 +160,7 @@ class TravelController extends Controller
             ];
             $respuesta = [
                 'code' => 200,
-                'msg'  => json_encode($datosviaje),
+                'msg'  => $datosviaje,
                 'detail' => "Recuerda otorgar un excelente servicio"
             ];
         }catch(\Exception $e){
